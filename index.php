@@ -1,4 +1,41 @@
 <?php
+class movie
+{
+    public $titolo;
+    public $anno;
+    public $genere;
+    public $poster;
+
+    public function __construct($titolo, $anno, $genere)
+    {
+        $this->titolo = $titolo;
+        $this->anno = $anno;
+        $this->genere = $genere;
+    }
+
+    public function setPoster($poster)
+    {
+        $this->poster = $poster;
+    }
+    public function getPoster()
+    {
+        return $this->poster;
+    }
+
+    public function getMovieDetails()
+    {
+        return $this->titolo . '' . $this->anno . '' . $this->genere;
+    }
+}
+
+class genere
+{
+    public $name;
+    public function __construct($name)
+    {
+        $this->name = $name;
+    }
+}
 
 
 
