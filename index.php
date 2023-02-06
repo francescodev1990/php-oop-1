@@ -58,6 +58,7 @@ class genere
 
 <body>
 
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
